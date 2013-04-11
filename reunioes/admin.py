@@ -3,12 +3,10 @@ from django.contrib import admin
 from models import Reuniao
 
 class ReuniaoAdmin(admin.ModelAdmin):
-    list_display = ('assunto', 'data')
-    search_fields = ('assunto', 'data')
+    list_display = ('assunto', 'data', )
+    search_fields = ('assunto', 'data', )
     list_filter = ['data', ]
-    #list_editable = ['ativo', ]
-    #readonly_fields = ['cliques', ]
-    filter_horizontal = ['emails',]
+    filter_horizontal = ['emails', ]
     save_on_top = True
     list_per_page = 20
 
