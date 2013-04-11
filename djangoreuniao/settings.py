@@ -156,3 +156,13 @@ LOGGING = {
         },
     }
 }
+
+# -------------------------------------------------------------
+# EMAIL 
+# -------------------------------------------------------------
+
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_PORT="587"
+EMAIL_HOST_USER="teste@teste.com.br"
+EMAIL_HOST_PASSWORD="123456"
+EMAIL_USE_TLS=True
